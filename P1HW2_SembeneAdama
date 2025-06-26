@@ -1,0 +1,37 @@
+# Adama Junior Sembene
+# June 25, 2025
+# P1HW2
+# This program asks the user for a trip budget, destination, and expenses.
+# It calculates the total expenses and how much money will be left after spending.
+
+# Pseudocode:
+# 1. Ask the user for their total budget
+# 2. Ask for the travel destination
+# 3. Ask for the amount they will spend on gas
+# 4. Ask for the amount they will spend on accommodation
+# 5. Ask for the amount they will spend on food
+# 6. Calculate total expenses
+# 7. Subtract total expenses from budget
+# 8. Display the results
+
+# Get user input
+budget = float(input("Enter your budget: "))
+destination = input("Enter your travel destination: ")
+gas = float(input("How much do you think you will spend on gas? "))
+accommodation = float(input("Approximately, how much will you need for accommodation/hotel? "))
+food = float(input("Last, how much do you need for food? "))
+
+# Calculate total expenses and remaining balance
+total_expenses = gas + accommodation + food
+remaining_balance = budget - total_expenses
+
+# Display results
+print("\n------------Travel Expenses------------")
+print("Location:", destination)
+print("Initial Budget: $", format(budget, ))
+print("\nExpenses:")
+print("Gas:           $", format(gas, ))
+print("Accommodation: $", format(accommodation, ))
+print("Food:          $", format(food, ))
+print("----------------------------------------")
+print("Remaining Balance: $", format(remaining_balance, ))
